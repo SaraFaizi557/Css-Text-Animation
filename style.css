@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/bd/c2/fd/caption.jpg?w=1200&h=700&s=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 0.4;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 250;
+    }
+
+    100% {
+        fill: rgb(255, 170, 203);
+        stroke-dashoffset: 0;
+    }
+}
